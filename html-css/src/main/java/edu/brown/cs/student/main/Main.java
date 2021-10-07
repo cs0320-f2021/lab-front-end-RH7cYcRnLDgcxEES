@@ -149,7 +149,7 @@ public final class Main {
    */
   private static class AutocorrectHandler implements TemplateViewRoute {
     public ModelAndView handle(Request req, Response res) {
-      Map<String, String> variables = ImmutableMap.of("title", "The best autocorrector ever", "message", "It's gonna autocorrect like you've never seen before",
+      Map<String, String> variables = ImmutableMap.of("title", "Corrector", "message", "It's gonna autocorrect like you've never seen before",
       "suggestions", "");
       return new ModelAndView(variables, "autocorrect.ftl");
     }
@@ -166,7 +166,7 @@ public final class Main {
       QueryParamsMap qm = req.queryMap();
       String textFromTextField = qm.value("text");
 
-      Map<String, String> variables = ImmutableMap.of("title", "The best autocorrecter ever", "message", "You submitted: "+ textFromTextField+"!!!",
+      Map<String, String> variables = ImmutableMap.of("title", "Corrector", "message", "You submitted: "+ textFromTextField+"!!!",
               "suggestions",ac.suggest(textFromTextField).toString());
       return new ModelAndView(variables, "autocorrect.ftl");
     }

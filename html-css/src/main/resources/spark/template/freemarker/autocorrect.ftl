@@ -4,7 +4,7 @@
 <!-- CODE FOR TEXT BOX GOES HERE -->
 
 
-  <h1>Autocorrect</h1>
+  <h1>Here is the autocorrector</h1>
 
   ${message}
   <form method="POST" action="/results">
