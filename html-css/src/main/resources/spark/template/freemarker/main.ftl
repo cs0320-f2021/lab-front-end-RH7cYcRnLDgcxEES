@@ -11,8 +11,10 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <h1>AUTOCORRECT</h1>
-    ${content}
+    <h1 class="header" id="top">AUTOCORRECT</h1>
+    <h2 class="header">...with style</h2>
+
+    <div id="main_content">${content}</div>
        <!-- Again, we're serving up the unminified source for clarity. -->
      <script src="js/jquery-2.1.1.js"></script>
      <script src="js/main.js"></script>
